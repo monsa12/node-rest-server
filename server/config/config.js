@@ -9,6 +9,22 @@ process.env.PORT = process.env.PORT || 3000;
 process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
 
 //
+//vencimiento del token
+//60 segundo
+//60 minutos
+//24 horas
+//30 dias
+process.env.CADUCIDAD_TOKEN = 60 * 60 * 24 * 30;
+
+
+
+//
+//SEED semilla de autenticacion
+//se crea la variable glogal con heroku cli
+//heroku config:set SEED="este-es-el-seed-de-produccion"
+process.env.SEED = process.env.SEED || 'este-es-el-seed-desarrollo';
+
+//
 //Base de datos
 //
 let urlDB;
