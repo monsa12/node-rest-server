@@ -16,8 +16,6 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
 //30 dias
 process.env.CADUCIDAD_TOKEN = 60 * 60 * 24 * 30;
 
-
-
 //
 //SEED semilla de autenticacion
 //se crea la variable glogal con heroku cli
@@ -35,3 +33,8 @@ if (process.env.NODE_ENV === 'dev') {
 }
 
 process.env.URLDB = urlDB;
+
+//
+//Google client
+//
+process.env.CLIENT_ID = process.env.CLIENT_ID || '625757070841-4ok6ibga33d5dkdgcj11kqrc8or8ekdt.apps.googleusercontent.com';
